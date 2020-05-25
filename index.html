@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- <script type="text/javascript" defer async src="./JS/index_0.js"></script> -->
+    <title>豆瓣</title>
+</head>
+
+<body>
+    <!-- 导航 -->
+    <nav class="nav">
+        <div class="chunk_0">
+            <div class="nav_title">
+                <a href="">
+                    <h1>
+                        <span>douban</span>
+                    </h1>
+                </a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="书籍、电影、音乐、小组、小站、成员">
+                <a href="https://www.douban.com/search?q="> <i class="iconfont iconfangdajing"></i></a>
+            </div>
+            <div class="nav_object">
+                <ul>
+                    <a target="_blank" href="https://book.douban.com/" class="read_book">
+                        <li></li>
+                    </a>
+                    <a target="_blank" href="https://movie.douban.com/" class="movie">
+                        <li></li>
+                    </a>
+                    <a target="_blank" href="https://music.douban.com/" class="music">
+                        <li></li>
+                    </a>
+                    <a target="_blank" href="https://www.douban.com/location/zhuhai/" class="same_city">
+                        <li></li>
+                    </a>
+                    <a target="_blank" href="https://www.douban.com/group/explore" class="group">
+                        <li></li>
+                    </a>
+                    <a target="_blank" href="https://read.douban.com/" class="read">
+                        <li></li>
+                    </a>
+                    <a target="_blank" href="https://douban.fm/" class="fm">
+                        <li></li>
+                    </a>
+                    <a target="_blank"
+                        href="https://m.douban.com/time/?dt_time_source=douban-web_anonymous_index_top_nav"
+                        class="time">
+                        <li></li>
+                    </a>
+                    <a target="_blank"
+                        href="https://market.douban.com/?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web"
+                        class="doupin">
+                        <li></li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--  注册-->
+    <div id = "register"class="register section">
+        <div class="chunk clearfix">
+            <!-- information login -->
+            <div class="form right">
+                <div class="register_method">
+                    <ul class="clearfix">
+                        <li @click="switch_login"id="sms_login" class="active left">短信登陆/注册</li>
+                        <li @click="switch_login"id="pw_login" class="right">密码登陆</li>
+                    </ul>
+                </div>
+                <!-- SMS_login -->
+                <form action="" :class="{hidden:smsHidden}"class="sms_login hidden" >
+                    <div class="form_item alert">
+                        <span>请仔细阅读</span> <a href="https://accounts.douban.com/passport/agreement">豆瓣使用协议、隐私政策</a>
+                    </div>
+                    <div class="form_item phone_number">
+                        <div class="code_prefix">
+                            +86
+                        </div>
+                        <div class="international_codes_background hidden">
+                            <div class="international_codes">
+                                <div class="international_codes_title">
+                                    选择国际区号
+                                </div>
+                                <!-- 选择区号 -->
+                                <ul>
+                                    <li class="clearfix active">
+                                        <div class="left">中国1</div>
+                                        <div class="right">1</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国2</div>
+                                        <div class="right">2</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国3</div>
+                                        <div class="right">3</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国4</div>
+                                        <div class="right">4</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国5</div>
+                                        <div class="right">5</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国6</div>
+                                        <div class="right">6</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国7</div>
+                                        <div class="right">7</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国8</div>
+                                        <div class="right">8</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国9</div>
+                                        <div class="right">9</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国10</div>
+                                        <div class="right">10</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国11</div>
+                                        <div class="right">11</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国12</div>
+                                        <div class="right">12</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国13</div>
+                                        <div class="right">13</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国14</div>
+                                        <div class="right">14</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国15</div>
+                                        <div class="right">15</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国16</div>
+                                        <div class="right">16</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国17</div>
+                                        <div class="right">17</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国18</div>
+                                        <div class="right">18</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国19</div>
+                                        <div class="right">19</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国20</div>
+                                        <div class="right">20</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国21</div>
+                                        <div class="right">21</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国22</div>
+                                        <div class="right">22</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国23</div>
+                                        <div class="right">23</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国24</div>
+                                        <div class="right">24</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国25</div>
+                                        <div class="right">25</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国26</div>
+                                        <div class="right">26</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国27</div>
+                                        <div class="right">27</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国28</div>
+                                        <div class="right">28</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国29</div>
+                                        <div class="right">29</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国30</div>
+                                        <div class="right">30</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国31</div>
+                                        <div class="right">31</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国32</div>
+                                        <div class="right">32</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国33</div>
+                                        <div class="right">33</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国34</div>
+                                        <div class="right">34</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国35</div>
+                                        <div class="right">35</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国36</div>
+                                        <div class="right">36</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国37</div>
+                                        <div class="right">37</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国38</div>
+                                        <div class="right">38</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国39</div>
+                                        <div class="right">39</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国40</div>
+                                        <div class="right">40</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国41</div>
+                                        <div class="right">41</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国42</div>
+                                        <div class="right">42</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国43</div>
+                                        <div class="right">43</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国44</div>
+                                        <div class="right">44</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国45</div>
+                                        <div class="right">45</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国46</div>
+                                        <div class="right">46</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国47</div>
+                                        <div class="right">47</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国48</div>
+                                        <div class="right">48</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国49</div>
+                                        <div class="right">49</div>
+                                    </li>
+                                    <li class="clearfix">
+                                        <div class="left">中国50</div>
+                                        <div class="right">50</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input type="text" maxlength="11" placeholder="手机号">
+                    </div>
+                    <div class="form_item identical">
+                        <input type="text" placeholder="验证码">
+                        <div><a href="">获取验证码</a></div>
+                    </div>
+                    <div class="form_item login">
+                        登录豆瓣
+                    </div>
+                    <div class="form_item auto_login clearfix">
+                        <div class="left">
+                            <label>
+                                <input type="checkbox">
+                                 <span>下次自动登陆</span> 
+                            </label>
+                        </div>
+                        <div class="right">
+                            <a href="">收不到验证码</a>
+                        </div>
+                    </div>
+                </form>
+                <!-- Pd_login -->
+                <form action="":class="{hidden:pdHidden}"class="pw_login">
+                    <div class="form_item alert">
+                        <a href="https://accounts.douban.com/passport/get_password">找回密码</a>
+                    </div>
+                    <div class="form_item identical">
+                        <input type="text" placeholder="手机号/邮箱">
+                    </div>
+                    <div class="form_item identical">
+                        <input type="text" placeholder="密码">
+                    </div>
+                    <div class="form_item login">
+                        登录豆瓣
+                    </div>
+                    <div class="form_item auto_login clearfix">
+                        <div class="left">
+                            <label>
+                                <input type="checkbox">
+                                 <span>下次自动登陆</span> 
+                            </label>
+                        </div>
+                        <div class="right">
+                            <a href="">海外手机登录</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="other_ways">
+                    <div class="form_item">
+                        <span>第三方登陆:</span>
+                        <a href="https://open.weixin.qq.com/connect/qrconnect?appid=wxd9c1c6bbd5d59980&redirect_uri=https%3A%2F%2Fwww.douban.com%2Faccounts%2Fconnect%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=_o5GzFgaVX4%2523douban-web%2523https%253A%2F%2Fwww.douban.com%2F#wechat_redirect"><i class="iconfont iconweixin"></i></a>
+                        <a href="https://api.weibo.com/oauth2/authorize?state=_o5GzFgaVX4%2521douban-web%2521https%253A//www.douban.com/&redirect_uri=https%3A//accounts.douban.com/connect/sina_weibo/callbackaHR0cHM6Ly9hY2NvdW50cy5kb3ViYW4uY29tL3Bhc3Nwb3J0L2xvZ2luX3BvcHVwP2xvZ2luX3NvdXJjZT1hbm9ueQ%3D%3D&response_type=code&client_id=1994016063&scope=&display=default"><i class="iconfont iconweibo"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="switch"></div>
+                <div class="sign hidden">
+                    扫码登录
+                </div>
+            </div>
+            <!-- qr_code login -->
+            <div class="form right hidden qr_code">
+                <p>二维码登录</p>
+                <div class="scan_code">
+                    <img src="./assets/img/qrr_code.png" alt="">
+                    <p>
+                        请打开豆瓣客户端扫一扫
+                    </p>
+                </div>
+                <div class="switch switch_0"></div>
+                <div class="sign hidden">
+                    短信登录/注册
+                </div>
+            </div>
+            <div class="app right">
+                <h2>
+                    豆瓣 6.0
+                </h2>
+                <div class="download_url">
+                    <a href="">下载豆瓣 App</a>
+                </div>
+                <div class="qr_link">
+                    <div class="qr_code hidden">
+                        <img src="./assets/img/QR_code.png" alt="">
+                        <span>iOS/Android 扫码直接下载</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/index.js"></script>
+    <!-- <script src="./assetsjs/vue.js"></script>
+    <script>
+        const register = new Vue({
+            el:"#register",
+            data:{
+                smsHidden:false,
+                pdHidden:true
+            },
+            methods:{
+                switch_login(){
+                    this.smsHidden=!this.smsHidden
+                    this.pdHidden=!this.pdHidden
+                }
+            }
+        })
+    </script> -->
+</body>
+
+</html>

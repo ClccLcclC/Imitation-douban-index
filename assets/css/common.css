@@ -1,0 +1,14 @@
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.hidden{
+    display: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
